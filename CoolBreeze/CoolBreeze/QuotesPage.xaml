@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CoolBreeze.QuotesPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Font size:" />
+                <Label Text="{Binding Source={x:Reference FontSlider}, Path=Value}" />
+            </StackLayout>
+            <Slider x:Name="FontSlider" Maximum="50" Minimum="16"></Slider>
+            <Label Text="You can't blame gravity for falling in love." FontSize="{Binding Source={x:Reference FontSlider}, Path=Value}"></Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
