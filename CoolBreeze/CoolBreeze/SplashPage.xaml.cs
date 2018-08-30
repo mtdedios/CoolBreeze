@@ -34,9 +34,13 @@ namespace CoolBreeze
         {
             Navigation.PushAsync(new GridLogin());
         }
-        private void Button_Clicked_4(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new QuotesPage());
-        }
+	    private void Button_Clicked_4(object sender, EventArgs e)
+	    {
+	        Navigation.PushAsync(new QuotesPage());
+	    }
+	    private void Button_Clicked_5(object sender, EventArgs e)
+	    {
+	        Navigation.PushAsync(new Animation());
+	    }
     }
 }

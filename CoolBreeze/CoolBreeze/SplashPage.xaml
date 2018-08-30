@@ -9,6 +9,7 @@
             <Button Text="Phone" Clicked="Button_Clicked_2" TextColor="White"></Button>
             <Button Text="Grid Login" Clicked="Button_Clicked_3" TextColor="White"></Button>
             <Button Text="Quotes" Clicked="Button_Clicked_4" TextColor="White"></Button>
+            <Button Text="Animation" Clicked="Button_Clicked_5" TextColor="White"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

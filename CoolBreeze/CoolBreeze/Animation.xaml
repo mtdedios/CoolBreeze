@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             x:Class="CoolBreeze.Animation">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <forms:AnimationView AutoPlay="True" Animation="emoji_tongue.json" Loop="True"
+                                 IsVisible="{Binding Source={x:Reference MyImage}, Path=IsLoading}"
+                                 IsEnabled="{Binding Source={x:Reference MyImage}, Path=IsLoading}"
+                                 IsPlaying="{Binding Source={x:Reference MyImage}, Path=IsLoading}"
+                                 VerticalOptions="FillAndExpand"
+                                 HorizontalOptions="FillAndExpand"
+                                 Grid.Row="0" Grid.RowSpan="2">
+            </forms:AnimationView>
+            <Image x:Name="MyImage" Source="https://placeimg.com/640/800/animals" Grid.Row="0" Grid.RowSpan="2"></Image>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
